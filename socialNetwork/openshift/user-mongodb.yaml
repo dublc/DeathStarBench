@@ -38,10 +38,16 @@ spec:
       containers:
       - name: user-mongodb
         image: mongo
+        # args: ["--config", "/etc/mongo/mongod.conf"]
         volumeMounts:
           - name: my-data
-            mountPath: "/data/db"
+            mountPath: /data/db
+          # - name: config
+          #   mountPath: /etc/mongo
       restartPolicy: Always
       volumes:
       - name: my-data
         emptyDir: {}
+      # - name: config
+      #   configMap:
+      #     name: mongodb-config

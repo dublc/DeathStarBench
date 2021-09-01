@@ -122,7 +122,7 @@ async def compose(addr, nodes):
 
 if __name__ == '__main__':
   filename_default = "datasets/social-graph/socfb-Reed98/socfb-Reed98.mtx"
-  ip_default = "127.0.0.1"
+  ip_default = "10.97.187.59"
   port_default = "8080"
 
   parser = argparse.ArgumentParser("DeathStarBench social graph initializer.")

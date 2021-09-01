@@ -9,6 +9,7 @@ metadata:
   namespace: social-network
 spec:
   type: ClusterIP
+  clusterIP: 10.97.187.59
   ports:
   - port: 8080
     targetPort: 8080

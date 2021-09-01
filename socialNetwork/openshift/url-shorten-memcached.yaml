@@ -38,4 +38,8 @@ spec:
       containers:
       - name: url-shorten-memcached
         image: memcached
+        args: ["-m $(MEMORY)", "-c $(CONN)", "-R $(MAXREQSPEREVENT)", "-t $(THREADS)"]
+        envFrom:
+        - configMapRef:
+            name: memcached-config
       restartPolicy: Always
