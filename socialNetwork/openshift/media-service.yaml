@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: media-service
-        image: yg397/social-network-microservices
+        image: yg397/social-network-microservices:better_tracing
         command: ["MediaService"]
         volumeMounts:
           - mountPath: /social-network-microservices/config/jaeger-config.yml

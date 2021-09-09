@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
       - name: compose-post-service
-        image: yg397/social-network-microservices
+        image: yg397/social-network-microservices:better_tracing
         command: ["ComposePostService"]
         volumeMounts:
           - mountPath: /social-network-microservices/config/jaeger-config.yml

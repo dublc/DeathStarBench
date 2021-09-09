@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: text-service
-        image: yg397/social-network-microservices
+        image: yg397/social-network-microservices:better_tracing
         command: ["TextService"]
         volumeMounts:
           - mountPath: /social-network-microservices/config/jaeger-config.yml
